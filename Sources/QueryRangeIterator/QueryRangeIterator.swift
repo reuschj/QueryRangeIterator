@@ -100,9 +100,9 @@ extension QueryRangeIterator: IteratorProtocol {
     // Static ------------------------------------------------------------------------------------------------------------ /
     
     /// Reassembles content, but allowing transforms to the query content and/or the non-query content
-    /// - Parameter query The search query
-    /// - Parameter content The content to look for the query in
-    /// - Parameter queryTransform An optional transform closure to run on all found query
+    /// - Parameter query: The search query
+    /// - Parameter content: The content to look for the query in
+    /// - Parameter queryTransform: An optional transform closure to run on all found query
     public static func transform(
         _ query: Content,
         in content: Content,
@@ -112,10 +112,10 @@ extension QueryRangeIterator: IteratorProtocol {
     }
     
     /// Reassembles content, but allowing transforms to the query content and/or the non-query content
-    /// - Parameter content The content to look for the query in
-    /// - Parameter query The search query
-    /// - Parameter nonQueryTransform  An optional transform closure to run on all non-query content
-    /// - Parameter queryTransform An optional transform closure to run on all found query
+    /// - Parameter content: The content to look for the query in
+    /// - Parameter query: The search query
+    /// - Parameter nonQueryTransform:  An optional transform closure to run on all non-query content
+    /// - Parameter queryTransform: An optional transform closure to run on all found query
     public static func reassemble(
         _ content: Content,
         with query: Content,

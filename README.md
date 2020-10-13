@@ -10,7 +10,7 @@ let query = "needle"
 let content = "haystackneedlehaystackneedlehaystack"
 var occurrences = QueryRangeIterator(query, in: content)
 while let next = occurrences.next() {
-    print(String(content[$0]))
+    print(String(content[next]))
 }
 ```
 
